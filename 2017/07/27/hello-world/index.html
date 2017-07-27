@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   
-  <meta name="keywords" content="网站关键字">
-  <meta name="description" content="网站简介">
+  <meta name="keywords" content="journery love">
+  <meta name="description" content="tear &amp; 炎">
   
-  <title>Hexo</title>
+  <title>小天地</title>
   
     <!-- stylesheets list from config.yml -->
     
@@ -38,23 +38,19 @@
   <div id="menu-inner">
       <ul id="slide-out" class="side-nav" >
     <div class="nav-header"  style="background-image: url(/images/header-bg.png);background-color:#26A69A">
-    <div class="header-box"><img src="/images/header.png" ondragstart="return false;"></div>
-    <p>John Doe</p>
+    <div class="header-box"><img src="/images/myheader.png" ondragstart="return false;"></div>
+    <p>Zhangjian</p>
     <div class="nav-link">
         
-        <a href="http://example.com" target="_blank"> <div class="link-box twitter"></div></a>
+        
+        <a  href="https://github.com/iszhangjian" target="_blank"><div class="link-box github"></div></a>
         
         
-        <a  href="http://example.com" target="_blank"><div class="link-box github"></div></a>
+        <a href="mailto:iszhangjian@139.com"><div class="link-box email"></div></a>
         
         
-        <a href="mailto:http://example.com"><div class="link-box email"></div></a>
         
-        
-        <a href="http://example.com" target="_blank"><div class="link-box weibo"></div></a>
-        
-        
-        <a href="http://example.com" target="_blank"> <div class="link-box zhihu"></div></a>
+        <a href="https://www.zhihu.com/people/luo-can-82-63/activities" target="_blank"> <div class="link-box zhihu"></div></a>
         
     </div>
     <div class="nav-search">
@@ -89,6 +85,12 @@
 </ul>
 <!--categories-->
 
+<li class="nav-list dropdown-btn">
+    <a   class=""  target="_self">
+        <div class="nav-ico"><i class="material-icons">dashboard</i></div><p>分类</p><div class="dropdown-ico"><i class="material-icons">arrow_drop_down</i></div>
+    </a>
+</li>
+
 <ul class="dropdown-menu dropdown" >
     <li class="nav-dropdown-list">
         
@@ -104,6 +106,12 @@
 
 <!--photo-->
 
+<li class="nav-list">
+    <a href="/photo" class="nopjax" target="_self">
+        <div class="nav-ico"><i class="material-icons">insert_photo</i> </div><p>影集</p>
+    </a>
+</li>
+
 <!--friends-->
 
 <!--about-->
@@ -118,10 +126,10 @@
   <div id="content-inner">
     
 <article id="post">
-  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-7.png)" >
+  <div class="post-page-title"  style="background-color:#26A69A;background-image:url(/images/random/vateral-15.png)" >
   <h2>Hello World</h2>
     
-  <p>作者:John Doe &nbsp&nbsp 发布于:<time datetime="2017-07-27T13:09:23.931Z">
+  <p>作者:Zhangjian &nbsp&nbsp 发布于:<time datetime="2017-07-27T13:09:23.931Z">
           2017-07-27
     </time>
   </p>
@@ -140,6 +148,31 @@
 
   </div>
   <!--评论块-->
+    
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="XXX.disqus.com"><button style="margin: 0 auto;background-color:#26A69A " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+       var disqus_config = function () {
+       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+       };
+       */
+      function disqus() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
 
 </article>
@@ -167,7 +200,7 @@
     <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:#26A69A"><i class="material-icons material-up">vertical_align_top</i></div></a>
 
 
-<p style="line-height: 45px">Copyright ©  2017  Hexo</p>
+<p style="line-height: 45px">Copyright ©  2017  小天地</p>
 <p style="line-height: 45px">Powered by <a href="https://hexo.io/" target="_blank"> Hexo </a> && Theme - <a href="https://github.com/moumao/hexo-theme-Vateral" target="_blank">Vateral</a></p>
 
   </div>
